@@ -28,6 +28,7 @@ void readData(Person per[20])
 
     for(int i = 0; i < 20; i++)
     {
+
         inData >> fname;
         inData >> lname;
         inData >> pay;
@@ -44,8 +45,9 @@ void writeData(Person p[20])
     string full;
     ofstream outData;
     outData.open("output.txt");
-    for(int i = 0; i < 20; i++)
+    for(int i = 0; i < 6; i++)
     {
+
         full = p[i].fullName();
         outData << full;
         outData << " ";
